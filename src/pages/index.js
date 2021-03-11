@@ -59,21 +59,36 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
+          <div className="row">
+            <div className={clsx('col col--5 col--offset-2')}>
+              <h1 className="hero__title">{siteConfig.title}</h1>
+              <p className="hero__subtitle">{siteConfig.tagline}</p>
+              <div className={styles.buttons}>
+                <Link
+                  className={clsx(
+                    'button button--secondary button--lg margin-right--md',
+                    styles.getStarted,
+                  )}
+                  to={useBaseUrl('docs/')}>
+                  Get Started
+                </Link>
+                <Link
+                  className={clsx(
+                    'button button--outline button--secondary button--lg',
+                    styles.getStarted,
+                  )}
+                  to={useBaseUrl('docs/')}>
+                  Invite Now
+                </Link>
+              </div>
+            </div>
+            <div className={clsx('col col--3', styles.heroImageContainer)}>
+              <img className={styles.heroImage} src="img/logo.svg" />
+            </div>
           </div>
         </div>
       </header>
