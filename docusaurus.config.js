@@ -46,7 +46,7 @@ module.exports = {
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content:
-        'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+        'If you like using Chronomate please consider <a target="_blank" rel="noopener noreferrer" href="#">donating</a>',
       backgroundColor: '#FFCB5F', // Defaults to `#fff`.
       textColor: '#312712', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
@@ -66,20 +66,20 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: '#',
           label: 'Support',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: '#',
           label: 'Invite',
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: '#',
           label: 'Donate',
           position: 'right',
+          className: 'header-gitlab-link'
         },
       ],
     },

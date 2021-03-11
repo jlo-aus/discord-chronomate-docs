@@ -8,32 +8,33 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
+    title: 'Storage Channel',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Keep icons stored where they are used - on Discord.
+        Change the icon at any time to any of the stored icons.
+        Set the channel as public to allow other users to contribute their own icons.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Scheduled Icon Changes',
+    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    description: (
+      <>
+        Schedule icon changes for any date on the calendar and
+        Chronomate will take care of the rest.
+      </>
+    ),
+  },
+  {
+    title: 'Timezone Aware',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Chronomate uses Coordinated Universal Time (UTC) by default. 
+        Change the timezone to best match you and your Discord server.
       </>
     ),
   },
@@ -61,7 +62,37 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+
+      <div className={styles.hero}>
+        <div className={styles.heroInner}>
+          <h1 className={styles.heroProjectTagline}>
+            <img
+              alt={'Logo'}
+              className={styles.heroLogo}
+              src={useBaseUrl('/img/logo.svg')}
+            />
+            <span
+              className={styles.heroTitleTextHtml}
+              dangerouslySetInnerHTML={{
+                __html: '<b>Automate</b> your Discord server <b>icon</b> with <b>calendar</b> based <b>scheduling</b>',
+              }}
+            />
+          </h1>
+          <div className={styles.indexCtas}>
+            <Link className="button button--primary" to="/docs">
+              Get Started
+            </Link>
+            <Link
+              className="button button--outline button--info"
+              to="#">
+              Invite Chronomate
+            </Link>
+          </div>
+        </div>
+      </div>
+
+
+      {/* <header className={clsx('hero hero--dark', styles.heroBanner)}>
         <div className="container">
           <div className="row">
             <div className={clsx('col col--5 col--offset-2')}>
@@ -70,7 +101,7 @@ export default function Home() {
               <div className={styles.buttons}>
                 <Link
                   className={clsx(
-                    'button button--secondary button--lg margin-right--md',
+                    'button button--primary button--lg margin-right--md',
                     styles.getStarted,
                   )}
                   to={useBaseUrl('docs/')}>
@@ -78,7 +109,7 @@ export default function Home() {
                 </Link>
                 <Link
                   className={clsx(
-                    'button button--outline button--secondary button--lg',
+                    'button button--info button--lg',
                     styles.getStarted,
                   )}
                   to={useBaseUrl('docs/')}>
@@ -91,7 +122,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
+
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>

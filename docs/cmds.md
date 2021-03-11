@@ -1,9 +1,9 @@
 ---
-id: commands
+id: cmds
 title: Commands
 ---
 
-:::info
+:::info Default Prefix
 
 The default prefix for Chronomate is `.`. All commands listed here are shown with that prefix ie. `.ping`. 
 
@@ -48,6 +48,9 @@ A full list of TZ Databse names can be found here: [List of tz database time zon
 Set the chanel which will be used to stored icons.
 
 If this is not set then the icon tasks will not be able to locate the icons.
+
+- Optional argument `[channel]` accepts text channels
+    - Example `.channel #general`
 
 ---
 
@@ -103,7 +106,7 @@ Tasks followed by a ⚠ emoji are broken, meaning the icon file couldn't be foun
 ---
 
 ### `.task clean`
-:::caution
+:::danger Warning
 This command will delete ***all*** broken tasks. They cannot be recovered once this command is excecuted.
 
 :::
@@ -113,7 +116,7 @@ Delete ***all*** tasks which are broken. Broken tasks will be followed by a ⚠ 
 ---
 
 ### `.task reset`
-:::caution
+:::danger Warning
 This command will delete ***all*** tasks. They cannot be recovered once this command is excecuted.
 
 :::
