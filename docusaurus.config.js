@@ -2,17 +2,17 @@
 module.exports = {
   title: 'Chronomate',
   tagline: 'Automate your discord guild icon',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://jlo-aus.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/my_favicon.ico',
+  organizationName: 'jlo-aus', // Usually your GitHub org/user name.
+  projectName: 'discord-chronomate-docs', // Usually your repo name.
   themeConfig: {
     colorMode: {
       // "light" | "dark"
-      defaultMode: 'dark',
+      defaultMode: 'light',
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
@@ -20,7 +20,7 @@ module.exports = {
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
 
       // Dark/light switch icon options
       switchConfig: {

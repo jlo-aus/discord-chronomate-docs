@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Storage Channel',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/storage.svg',
     description: (
       <>
         Keep icons stored where they are used - on Discord.
@@ -20,7 +20,7 @@ const features = [
   },
   {
     title: 'Scheduled Icon Changes',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/schedule.svg',
     description: (
       <>
         Schedule icon changes for any date on the calendar and
@@ -30,7 +30,7 @@ const features = [
   },
   {
     title: 'Timezone Aware',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/clock.svg',
     description: (
       <>
         Chronomate uses Coordinated Universal Time (UTC) by default. 
@@ -91,39 +91,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* <header className={clsx('hero hero--dark', styles.heroBanner)}>
-        <div className="container">
-          <div className="row">
-            <div className={clsx('col col--5 col--offset-2')}>
-              <h1 className="hero__title">{siteConfig.title}</h1>
-              <p className="hero__subtitle">{siteConfig.tagline}</p>
-              <div className={styles.buttons}>
-                <Link
-                  className={clsx(
-                    'button button--primary button--lg margin-right--md',
-                    styles.getStarted,
-                  )}
-                  to={useBaseUrl('docs/')}>
-                  Get Started
-                </Link>
-                <Link
-                  className={clsx(
-                    'button button--info button--lg',
-                    styles.getStarted,
-                  )}
-                  to={useBaseUrl('docs/')}>
-                  Invite Now
-                </Link>
-              </div>
-            </div>
-            <div className={clsx('col col--3', styles.heroImageContainer)}>
-              <img className={styles.heroImage} src="img/logo.svg" />
-            </div>
-          </div>
-        </div>
-      </header> */}
-
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
@@ -137,6 +104,7 @@ export default function Home() {
           </section>
         )}
       </main>
+      
     </Layout>
   );
 }

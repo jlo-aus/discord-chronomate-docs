@@ -8,6 +8,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs
   defaultValue="1"
+  className="unique-tabs"
   values={[
     {label: 'Manage Server', value: '1'},
     {label: 'View Channels', value: '2'},
