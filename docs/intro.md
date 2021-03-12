@@ -34,7 +34,7 @@ The core set of features right now include:
 
 ## Development
 
-This bot is is a hoby project, developed in my free time. In the future there are some features which I would like to include:
+This bot is is a hobby project, developed in my free time. In the future there are some features which I would like to include:
 
 - ✨ Banner changing
 - 🌕 Tasks based on events which change date each year

@@ -46,7 +46,7 @@ module.exports = {
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content:
-        'If you like using Chronomate please consider <a target="_blank" rel="noopener noreferrer" href="#">donating</a>',
+        'If you like using Chronomate please consider <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/jloaus">donating</a>',
       backgroundColor: '#FFCB5F', // Defaults to `#fff`.
       textColor: '#312712', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
@@ -66,7 +66,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: '#',
+          href: 'https://discord.gg/MQ3SHgWVT2',
           label: 'Support',
           position: 'left',
         },
@@ -76,7 +76,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: '#',
+          href: 'https://www.buymeacoffee.com/jloaus',
           label: 'Donate',
           position: 'right',
           className: 'header-gitlab-link'
@@ -104,11 +104,7 @@ module.exports = {
           items: [
             {
               label: 'Discord Server',
-              href: '#',
-            },
-            {
-              label: 'Docs',
-              href: '#',
+              href: 'https://discord.gg/MQ3SHgWVT2',
             },
           ],
         },
@@ -121,7 +117,7 @@ module.exports = {
             },
             {
               label: 'Donate',
-              href: '#',
+              href: 'https://www.buymeacoffee.com/jloaus',
             },
           ],
         },
