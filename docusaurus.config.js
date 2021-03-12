@@ -3,7 +3,7 @@ module.exports = {
   title: 'Chronomate',
   tagline: 'Automate your discord guild icon',
   url: 'https://jlo-aus.github.io',
-  baseUrl: '/',
+  baseUrl: '/discord-chronomate-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/my_favicon.ico',
