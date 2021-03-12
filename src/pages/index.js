@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Automate your Discord server icon with calendar based scheduling">
 
       <div className={styles.hero}>
         <div className={styles.heroInner}>
@@ -104,7 +104,7 @@ export default function Home() {
           </section>
         )}
       </main>
-      
+
     </Layout>
   );
 }
