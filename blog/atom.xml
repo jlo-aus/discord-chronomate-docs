@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jlo-aus.github.io/blog</id>
+    <title>Chronomate Blog</title>
+    <updated>2015-10-25T23:29:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://jlo-aus.github.io/blog"/>
+    <subtitle>Chronomate Blog</subtitle>
+    <icon>https://jlo-aus.github.io/img/my_favicon.ico</icon>
+</feed>
