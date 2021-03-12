@@ -95,7 +95,7 @@ module.exports = {
             },
             {
               label: 'Commands',
-              to: 'docs/doc2/',
+              to: 'docs/cmds/',
             },
           ],
         },
