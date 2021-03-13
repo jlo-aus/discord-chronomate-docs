@@ -44,3 +44,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   border-radius: var(--ifm-global-radius);
   background-color: var(--ifm-tabs-color-active);
 }
+
+html[data-theme='dark'] a code {
+  color: var(--ifm-color-primary-lightest);
+}

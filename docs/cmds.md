@@ -15,7 +15,13 @@ Alternate to a prefix you can mention the bot ie. `@Chronomate ping`
 
 ## Admin
 
-### `.config`
+:::info Permissions
+
+Admin commands can only be used by users with the `Administrator` permission.
+
+:::
+
+### `.config` {#config}
 Show the server config:
 - **Prefix** - The custom prefix set for the server
 - **Timezone** - The timezone used for icon tasks
@@ -24,14 +30,14 @@ Show the server config:
 
 ---
 
-### `.prefix [prefix]`
+### `.prefix [prefix]` {#prefix}
 Change the server's prefix.
 
 If `[prefix]` is left blank the prefix is reset to the default.
 
 ---
 
-### `timezone [timezone]`
+### `timezone [timezone]` {#timezone}
 Set the timezone for the server, used for icon tasks. Default is Coordinated Universal Time (UTC)
 
 If `[timezone]` is left blank the timezone is reset to UTC.
@@ -44,7 +50,13 @@ A full list of TZ Databse names can be found here: [List of tz database time zon
 
 ## Icon
 
-### `.channel [channel]`
+:::info Permissions
+
+Icon commands can only be used by users with the `Manage Server` permission, which would be required to change the server icon traditionally.
+
+:::
+
+### `.channel [channel]` {#channel}
 Set the chanel which will be used to stored icons.
 
 If this is not set then the icon tasks will not be able to locate the icons.
@@ -54,19 +66,25 @@ If this is not set then the icon tasks will not be able to locate the icons.
 
 ---
 
-### `.geticon`
+### `.geticon` {#geticon}
 Show the current icon for this server.
 
 ---
 
-### `.seticon <message>`
+### `.seticon <message>` {#seticon}
 Set the server icon to one stored in the icon channel.
 
 Required argument `<message>` will accept either the message ID or the message link.
 
 ## Icon Tasks
 
-### `.task toggle [bool]`
+:::info Permissions
+
+Icon task commands can only be used by users with the `Manage Server` permission, which would be required to change the server icon traditionally.
+
+:::
+
+### `.task toggle [bool]` {#task-toggle}
 Enable or disable the automatic icon tasks. Default is off.
 
 If `[bool]` is left blank the setting will toggle between on or off.
@@ -77,7 +95,7 @@ If `[bool]` is left blank the setting will toggle between on or off.
 
 ---
 
-### `.task add <month> <day> <message>`
+### `.task add <month> <day> <message>` {#task-add}
 Add a new task on the specified month and day. Tasks set on on 29th Feb will only occur on leap years.
 
 - Required argument `<month>` accepts a number 1-12 or a month name in short or full form. 
@@ -88,7 +106,7 @@ Add a new task on the specified month and day. Tasks set on on 29th Feb will onl
 
 ---
 
-### `.task del <month> <day>`
+### `.task del <month> <day>` {#task-del}
 Delete a task on the specified month and day.
 
 - Required argument `<month>` accepts a number 1-12 or a month name in short or full form. 
@@ -98,15 +116,15 @@ Delete a task on the specified month and day.
 
 ---
 
-### `.task list`
+### `.task list` {#task-list}
 List all the tasks currently set for this server.
 
 Tasks followed by a ⚠ emoji are broken, meaning the icon file couldn't be found.
 
 ---
 
-### `.task clean`
-:::danger Warning
+### `.task clean` {#task-clean}
+:::caution Warning
 This command will delete ***all*** broken tasks. They cannot be recovered once this command is excecuted.
 
 :::
@@ -115,8 +133,8 @@ Delete ***all*** tasks which are broken. Broken tasks will be followed by a ⚠ 
 
 ---
 
-### `.task reset`
-:::danger Warning
+### `.task reset` {#task-reset}
+:::caution Warning
 This command will delete ***all*** tasks. They cannot be recovered once this command is excecuted.
 
 :::
@@ -125,10 +143,10 @@ Delete ***all*** automatic icon tasks.
 
 ## Misc
 
-### `.ping`
+### `.ping` {#ping}
 Ping the bot.
 
 ---
 
-### `.uptime`
+### `.uptime` {#uptime}
 See how long the bot has been running for.
