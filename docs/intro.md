@@ -49,4 +49,4 @@ This bot is is a hobby project, developed in my free time. In the future there a
         - Do this monthly, daily or hourly
 - 💿 Log channel
 
-Chronomate is a hoby project developed in my spare time. If you like using it please consider supporting with a donation.
+Chronomate is a hobby project developed in my spare time. If you like using it please consider supporting with a donation.

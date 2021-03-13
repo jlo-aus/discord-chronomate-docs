@@ -6,6 +6,14 @@ title: Permissions
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+
+:::info
+These are the required permissions for the bot. Click each to see more on why they are required.
+
+**Without all of these permissions the bot may not work as expected.**
+
+:::
+
 <Tabs
   defaultValue="1"
   className="unique-tabs"

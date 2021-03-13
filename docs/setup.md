@@ -1,17 +1,21 @@
 ---
 id: setup
-title: Setup
+title: Setup Guide
 ---
 
 ## 1. Invite Chronomate
 
-<a class="button button--info button--outline button--lg" href="#">Invite Bot</a>
+Invite the bot using the button below.
+
+<a class="button button--info button--outline button--lg" href="#">Invite Chronomate</a>
 <br></br>
 
 #### Required Permissions
 `Manage Server` `View Channels` `Send Messages` `Manage Messages` `Add Reactions`
 
 For more informaion on what these permissions are needed for see [Permissions](perms)
+
+---
 
 ## 2. Set the icon channel
 
@@ -22,6 +26,8 @@ The icon channel can be any text channel on the server.
 It is recomended to start a new empty channel however this isn't required.
 
 To set the channel use [`.channel [channel]`](cmds#channel)
+
+---
 
 ## 3. Add some icons
 
@@ -44,13 +50,21 @@ You can also use URL links for any image.
 - URLs must link directly to the image.
     - URLs must end in one of the appropriate file formats for a server icon.
 
+---
+
 ## 4. Add an icon task
 
 Add a task using [`.task add <month> <day> <message>`](cmds#task-add)
 
+---
+
 ## 5. Turn on icon tasks
 
-By default icon tasks are disabled in a new server. To enable use [`.task toggle on`](cmds#task-toggle)
+By default icon tasks are disabled in a new server. 
+
+To enable use [`.task toggle on`](cmds#task-toggle)
+
+---
 
 ## 6. Set the timezone
 
@@ -61,6 +75,8 @@ Set the timezone using [`.timezone [timezone]`](cmds#timezone).
 A full list of TZ Databse names can be found here: [List of tz database time zones - Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 The automatic icon changes will occur at 2am in whatever timezone is set. By default the timezone is UTC.
+
+---
 
 ## 7. Review config changes
 

@@ -13,6 +13,12 @@ Alternate to a prefix you can mention the bot ie. `@Chronomate ping`
 
 :::
 
+:::note
+
+Some command inputs are required and some are optional. Required inputs are wrapped using `<>` while optional inputs are wrapped using `[]`.
+
+:::
+
 ## Admin
 
 :::info Permissions
