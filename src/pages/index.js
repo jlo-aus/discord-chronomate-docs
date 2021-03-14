@@ -84,7 +84,7 @@ export default function Home() {
             </Link>
             <Link
               className="button button--outline button--info"
-              to="#">
+              to="https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot">
               Invite Chronomate
             </Link>
           </div>

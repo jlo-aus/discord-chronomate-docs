@@ -7,7 +7,7 @@ title: Setup Guide
 
 Invite the bot using the button below.
 
-<a class="button button--info button--outline button--lg" href="#">Invite Chronomate</a>
+<a class="button button--info button--outline button--lg" href="https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot">Invite Chronomate</a>
 <br></br>
 
 #### Required Permissions

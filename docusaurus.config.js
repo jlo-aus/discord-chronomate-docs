@@ -71,7 +71,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: '#',
+          href: 'https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot',
           label: 'Invite',
           position: 'left',
         },
@@ -113,7 +113,7 @@ module.exports = {
           items: [
             {
               label: 'Invite',
-              href: '#',
+              href: 'https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot',
             },
             {
               label: 'Donate',
@@ -132,8 +132,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
