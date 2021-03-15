@@ -1,5 +1,5 @@
 module.exports = {
   someSidebar: {
-    Chronomate: ['intro','setup','cmds','perms'],
+    Chronomate: ['intro','setup','cmds','perms','trble'],
   },
 };

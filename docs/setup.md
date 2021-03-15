@@ -74,7 +74,7 @@ Set the timezone using [`.timezone [timezone]`](cmds#timezone).
 
 A full list of TZ Databse names can be found here: [List of tz database time zones - Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
-The automatic icon changes will occur at 2am in whatever timezone is set. By default the timezone is UTC.
+The automatic icon changes will occur within the hour of 2am (2:00 to 2:59) in whatever timezone is set. By default the timezone is UTC.
 
 ---
 
