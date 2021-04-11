@@ -36,6 +36,16 @@ Show the server config:
 
 ---
 
+### `.logging [channel]`
+Set the channel which the bot can send log messages to.
+
+- Optional argument `[channel]` accepts text channels
+    - Example `.channel #logs`
+
+If `[channel]` is left blank the log channel will be cleared.
+
+---
+
 ### `.prefix [prefix]` {#prefix}
 Change the server's prefix.
 
@@ -43,7 +53,7 @@ If `[prefix]` is left blank the prefix is reset to the default.
 
 ---
 
-### `timezone [timezone]` {#timezone}
+### `.timezone [timezone]` {#timezone}
 Set the timezone for the server, used for icon tasks. Default is Coordinated Universal Time (UTC)
 
 If `[timezone]` is left blank the timezone is reset to UTC.

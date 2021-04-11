@@ -4,7 +4,7 @@ title: Troubleshooting
 ---
 
 ### The bot is offline.
-- Check the outages channel in the support for info any outages.
+- Check the outages channel in the support server for info any outages.
 
 ---
 
@@ -12,6 +12,7 @@ title: Troubleshooting
 All commands are listed in the [commands](cmds) section.
 - Check you have typed the command correctly.
 - Check you have the permissions needed to use that command.
+- Make sure the bot is able to see the channel and has permission to send messages.
 
 ---
 
