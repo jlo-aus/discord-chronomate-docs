@@ -36,7 +36,7 @@ Show the server config:
 
 ---
 
-### `.logging [channel]`
+### `.logging [channel]` {#logging}
 Set the channel which the bot can send log messages to.
 
 - Optional argument `[channel]` accepts text channels
@@ -136,6 +136,13 @@ Delete a task on the specified month and day.
 List all the tasks currently set for this server.
 
 Tasks followed by a ⚠ emoji are broken, meaning the icon file couldn't be found.
+
+---
+
+### `.task next` {#task-next}
+Finds the next scheduled task and displays and ETA (Estimated Time of Action) which counts down to the task running.
+
+*Note that Feb 29 tasks only run on leap years so even if it appears next in the task list it may not actually be the next task to run.*
 
 ---
 
