@@ -1,6 +1,7 @@
 ---
 id: trble
 title: Troubleshooting
+slug: /troubleshooting
 ---
 
 ### The bot is offline.
@@ -9,7 +10,7 @@ title: Troubleshooting
 ---
 
 ### The bot is online but isn't responding to my command.
-All commands are listed in the [commands](cmds) section.
+All commands are listed in the [commands](commands) section.
 - Check you have typed the command correctly.
 - Check you have the permissions needed to use that command.
 - Make sure the bot is able to see the channel and has permission to send messages.
@@ -33,6 +34,6 @@ If it has not reached 3am yet then there is a chance that the task may still tri
 If the time is 3am in the timezone set and the icon still hasn't changed then check the following.
 
 For icon tasks to work properly you must have:
-- Set the icon channel using [`/icon channel [channel]`](cmds#channel)
+- Set the icon channel using [`/icon channel [channel]`](commands#channel)
 - Set icon tasks enabled to "True" using `/icon task toggle True`
 

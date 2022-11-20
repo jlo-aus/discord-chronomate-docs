@@ -1,6 +1,7 @@
 ---
-id: cmds
+id: docs-cmds
 title: Commands
+slug: /commands
 ---
 
 :::note

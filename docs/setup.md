@@ -1,5 +1,5 @@
 ---
-id: setup
+id: docs-setup
 title: Setup Guide
 ---
 
@@ -25,7 +25,7 @@ The icon channel can be any text channel on the guild.
 
 It is recomended to start a new empty channel however this isn't required.
 
-To set the channel use [`/icon channel [channel]`](cmds#channel)
+To set the channel use [`/icon channel [channel]`](commands#channel)
 
 ---
 
@@ -33,7 +33,7 @@ To set the channel use [`/icon channel [channel]`](cmds#channel)
 
 From September 2022 Discord updated the TOS, bots now require special permission to read other users messages. This means Chronomate will not be able to read any icons which are sent to the channel except for it's own.
 
-Add some icons to the icon channel using [`/icon upload <icon>`](cmds#iconupload)
+Add some icons to the icon channel using [`/icon upload <icon>`](commands#iconupload)
 
 :::info File Formats
 Valid formats for icon images are: `.png` `.jpg` `.jpeg` `.gif` `.webp`
@@ -45,7 +45,7 @@ For animated guild icons the guild must have at least one boost.
 
 ## 4. Add an icon task
 
-Add a task using [`/icon task add <month> <day> <message>`](cmds#task-add)
+Add a task using [`/icon task add <month> <day> <message>`](commands#task-add)
 
 ---
 
@@ -53,7 +53,7 @@ Add a task using [`/icon task add <month> <day> <message>`](cmds#task-add)
 
 By default icon tasks are disabled in a new guild. 
 
-To enable use [`/icon task toggle on`](cmds#task-toggle)
+To enable use [`/icon task toggle on`](commands#task-toggle)
 
 ---
 
@@ -61,7 +61,7 @@ To enable use [`/icon task toggle on`](cmds#task-toggle)
 
 This is optional.
 
-Set the timezone using [`/timezone [timezone]`](cmds#timezone).
+Set the timezone using [`/timezone [timezone]`](commands#timezone).
 
 A full list of TZ Databse names can be found here: [List of tz database time zones - Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
@@ -71,4 +71,4 @@ The automatic icon changes will occur within the hour of 2am (2:00 to 2:59) in w
 
 ## 7. Review config changes
 
-To make sure all settings are as expected use [`/showconfig`](cmds#config) to list all configuration for the bot.
+To make sure all settings are as expected use [`/showconfig`](commands#config) to list all configuration for the bot.

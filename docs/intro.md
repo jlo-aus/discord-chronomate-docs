@@ -1,5 +1,5 @@
 ---
-id: intro
+id: docs-intro
 title: Introduction
 slug: /
 ---

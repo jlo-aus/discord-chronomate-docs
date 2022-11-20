@@ -1,6 +1,7 @@
 ---
 id: perms
 title: Permissions
+slug: /permissions
 ---
 
 | Permission        | Description                                                                  |
