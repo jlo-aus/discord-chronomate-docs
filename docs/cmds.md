@@ -3,16 +3,6 @@ id: cmds
 title: Commands
 ---
 
-:::info Default Prefix
-
-The default prefix for Chronomate is `.`. All commands listed here are shown with that prefix ie. `.ping`. 
-
-If you have changed the prefix using `.prefix` then you will need to use that prefix instead. 
-
-Alternate to a prefix you can mention the bot ie. `@Chronomate ping`
-
-:::
-
 :::note
 
 Some command inputs are required and some are optional. Required inputs are wrapped using `<>` while optional inputs are wrapped using `[]`.
@@ -27,39 +17,32 @@ Admin commands can only be used by users with the `Administrator` permission.
 
 :::
 
-### `.config` {#config}
-Show the server config:
-- **Prefix** - The custom prefix set for the server
+### `/showconfig` {#config}
+Show the guild config:
 - **Timezone** - The timezone used for icon tasks
+- **Log Channel** - Channel where logs from the bot will be sent
 - **Icon Tasks Enabled** - Whether icon tasks should be executed when they occur
-- **Icon Channel** - The channel where icon images are stored
+- **Icon Channel** - Icon storage channel where icon images will be sent on upload
 
 ---
 
-### `.logging [channel]` {#logging}
+### `/logchannel [channel]` {#logging}
 Set the channel which the bot can send log messages to.
 
 - Optional argument `[channel]` accepts text channels
-    - Example `.channel #logs`
+    - Example `/channel #logs`
 
 If `[channel]` is left blank the log channel will be cleared.
 
 ---
 
-### `.prefix [prefix]` {#prefix}
-Change the server's prefix.
-
-If `[prefix]` is left blank the prefix is reset to the default.
-
----
-
-### `.timezone [timezone]` {#timezone}
-Set the timezone for the server, used for icon tasks. Default is Coordinated Universal Time (UTC)
+### `/timezone [timezone]` {#timezone}
+Set the timezone Chronomate will use for this guild (when tasks will run). Default is Coordinated Universal Time (UTC)
 
 If `[timezone]` is left blank the timezone is reset to UTC.
 
 - Optional argument `[timezone]` accepts timezones from the [TZ Database](https://en.wikipedia.org/wiki/Tz_database) only. 
-    - Example: `.timezone Australia/Sydney`
+    - Example: `/timezone Australia/Sydney`
 
 A full list of TZ Databse names can be found here: [List of tz database time zones - Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
@@ -68,39 +51,52 @@ A full list of TZ Databse names can be found here: [List of tz database time zon
 
 :::info Permissions
 
-Icon commands can only be used by users with the `Manage Server` permission, which would be required to change the server icon traditionally.
+Icon commands can only be used by users with the `Manage Server` permission.
 
 :::
 
-### `.channel [channel]` {#channel}
-Set the chanel which will be used to stored icons.
+### `/icon channel [channel]` {#channel}
+Set the channel which will be used to store icons.
 
-If this is not set then the icon tasks will not be able to locate the icons.
+This must be set for Chronomate to be able to upload and find icons when tasks run.
 
 - Optional argument `[channel]` accepts text channels
-    - Example `.channel #general`
+    - Example `/channel #chronomate-icons`
 
 ---
 
-### `.geticon` {#geticon}
-Show the current icon for this server.
+### `/icon get` {#geticon}
+Sends a message containing the current guild icon.
 
 ---
 
-### `.seticon <message>` {#seticon}
-Set the server icon to one stored in the icon channel.
+### `/icon set <message>` {#seticon}
+Manually run an icon change task using any stored icon.
 
 Required argument `<message>` will accept either the message ID or the message link.
+
+---
+
+### `/icon upload <icon>` {#iconupload}
+Uploads an icon image to the icon channel.
+
+Required argument `<icon>` accepts an image file.
+
+:::info File Formats
+Valid formats for icon images are: `.png` `.jpg` `.jpeg` `.gif` `.webp`
+
+For animated guild icons the guild must have at least one boost. 
+:::
 
 ## Icon Tasks
 
 :::info Permissions
 
-Icon task commands can only be used by users with the `Manage Server` permission, which would be required to change the server icon traditionally.
+Icon task commands can only be used by users with the `Manage Server` permission.
 
 :::
 
-### `.task toggle [bool]` {#task-toggle}
+### `/icon task toggle [bool]` {#task-toggle}
 Enable or disable the automatic icon tasks. Default is off.
 
 If `[bool]` is left blank the setting will toggle between on or off.
@@ -111,7 +107,7 @@ If `[bool]` is left blank the setting will toggle between on or off.
 
 ---
 
-### `.task add <month> <day> <message>` {#task-add}
+### `/icon task add <month> <day> <message>` {#task-add}
 Add a new task on the specified month and day. Tasks set on on 29th Feb will only occur on leap years.
 
 - Required argument `<month>` accepts a number 1-12 or a month name in short or full form. 
@@ -122,7 +118,7 @@ Add a new task on the specified month and day. Tasks set on on 29th Feb will onl
 
 ---
 
-### `.task del <month> <day>` {#task-del}
+### `/icon task del <month> <day>` {#task-del}
 Delete a task on the specified month and day.
 
 - Required argument `<month>` accepts a number 1-12 or a month name in short or full form. 
@@ -132,44 +128,41 @@ Delete a task on the specified month and day.
 
 ---
 
-### `.task list` {#task-list}
-List all the tasks currently set for this server.
+### `/icon task list` {#task-list}
+List all the tasks currently set for this guild.
 
 Tasks followed by a ⚠ emoji are broken, meaning the icon file couldn't be found.
 
 ---
 
-### `.task next` {#task-next}
+### `/icon task next` {#task-next}
 Finds the next scheduled task and displays and ETA (Estimated Time of Action) which counts down to the task running.
 
 *Note that Feb 29 tasks only run on leap years so even if it appears next in the task list it may not actually be the next task to run.*
 
 ---
 
-### `.task clean` {#task-clean}
+### `/icon task clean` {#task-clean}
+
+Delete ***all*** tasks which are broken. Broken tasks will be followed by a ⚠ emoji in the when listed using `.task list`
+
 :::caution Warning
 This command will delete ***all*** broken tasks. They cannot be recovered once this command is excecuted.
 
 :::
 
-Delete ***all*** tasks which are broken. Broken tasks will be followed by a ⚠ emoji in the when listed using `.task list`
-
 ---
 
-### `.task reset` {#task-reset}
-:::caution Warning
+### `/icon task reset` {#task-reset}
+
+Delete ***all*** automatic icon tasks.
+
+:::danger Warning
 This command will delete ***all*** tasks. They cannot be recovered once this command is excecuted.
 
 :::
 
-Delete ***all*** automatic icon tasks.
-
 ## Misc
 
-### `.ping` {#ping}
-Ping the bot.
-
----
-
-### `.uptime` {#uptime}
+### `/uptime` {#uptime}
 See how long the bot has been running for.

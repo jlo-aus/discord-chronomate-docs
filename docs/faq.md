@@ -16,9 +16,16 @@ All commands are listed in the [commands](cmds) section.
 
 ---
 
+### I can't upload icons.
+
+The bot needs permissions `View Channels` and `Send Messages` make sure this is set.
+Make sure there are no channel specific permissions which will overide these.
+
+---
+
 ### The icon task I've setup didn't work.
 
-Check your server config using `.config`
+Check your guild config using `/showconfig`
 
 The icon tasks are triggered within the hour of 2am in the selected timezone.
 If it has not reached 3am yet then there is a chance that the task may still trigger.
@@ -26,6 +33,6 @@ If it has not reached 3am yet then there is a chance that the task may still tri
 If the time is 3am in the timezone set and the icon still hasn't changed then check the following.
 
 For icon tasks to work properly you must have:
-- Set the icon channel using [`.channel [channel]`](cmds#channel)
-- Set icon tasks enabled to "True" using `.task toggle True`
+- Set the icon channel using [`/icon channel [channel]`](cmds#channel)
+- Set icon tasks enabled to "True" using `/icon task toggle True`
 

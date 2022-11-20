@@ -12,9 +12,8 @@ const features = [
     imageUrl: 'img/storage.svg',
     description: (
       <>
-        Keep icons stored where they are used - on Discord.
+        Store icons where they are used - in your guild.
         Change the icon at any time to any of the stored icons.
-        Set the channel as public to allow other users to contribute their own icons.
       </>
     ),
   },
@@ -23,7 +22,7 @@ const features = [
     imageUrl: 'img/schedule.svg',
     description: (
       <>
-        Schedule icon changes for any date on the calendar and
+        Schedule icon change tasks for any date on the calendar and
         Chronomate will take care of the rest.
       </>
     ),
@@ -34,7 +33,7 @@ const features = [
     description: (
       <>
         Chronomate uses Coordinated Universal Time (UTC) by default. 
-        Change the timezone to best match you and your Discord server.
+        Change the timezone to best match you and your Discord guild.
       </>
     ),
   },
@@ -61,7 +60,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Automate your Discord server icon with calendar based scheduling">
+      description="Automate your Discord guild icon with calendar based scheduling">
 
       <div className={styles.hero}>
         <div className={styles.heroInner}>
@@ -74,7 +73,7 @@ export default function Home() {
             <span
               className={styles.heroTitleTextHtml}
               dangerouslySetInnerHTML={{
-                __html: '<b>Automate</b> your Discord server <b>icon</b> with <b>calendar</b> based <b>scheduling</b>',
+                __html: '<b>Automate</b> your Discord  guild <b>icon</b> with <b>calendar</b> based <b>scheduling</b>',
               }}
             />
           </h1>
@@ -84,7 +83,7 @@ export default function Home() {
             </Link>
             <Link
               className="button button--outline button--info"
-              to="https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot">
+              to="https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=3104&scope=bot%20applications.commands">
               Invite Chronomate
             </Link>
           </div>

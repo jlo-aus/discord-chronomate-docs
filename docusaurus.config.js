@@ -25,28 +25,30 @@ module.exports = {
       // Dark/light switch icon options
       switchConfig: {
         // Icon for the switch while in dark mode
-        darkIcon: '🌙',
+        darkIcon: '🕶',
 
         // CSS to apply to dark icon,
         // React inline style object
         // see https://reactjs.org/docs/dom-elements.html#style
         darkIconStyle: {
-          marginLeft: '2px',
+          marginLeft: '0px',
+          marginTop: '-1px',
         },
 
         // Unicode icons such as '\u2600' will work
         // Unicode with 5 chars require brackets: '\u{1F602}'
-        lightIcon: '😎',
+        lightIcon: '💡',
 
         lightIconStyle: {
           marginLeft: '3px',
+          marginTop: '-1px',
         },
       },
     },
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content:
-        'If you like using Chronomate please consider <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/jloaus">donating</a>',
+        '☕ If you find Chronomate useful, please consider <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/jloaus"> supporting me with caffeine</a>!',
       backgroundColor: '#FFCB5F', // Defaults to `#fff`.
       textColor: '#312712', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
@@ -71,7 +73,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot',
+          href: 'https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=3104&scope=bot%20applications.commands',
           label: 'Invite',
           position: 'left',
         },
@@ -103,7 +105,7 @@ module.exports = {
           title: 'Support',
           items: [
             {
-              label: 'Discord Server',
+              label: 'Discord Support Server',
               href: 'https://discord.gg/MQ3SHgWVT2',
             },
           ],
@@ -113,7 +115,7 @@ module.exports = {
           items: [
             {
               label: 'Invite',
-              href: 'https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=11360&scope=bot',
+              href: 'https://discord.com/api/oauth2/authorize?client_id=505166442338058251&permissions=3104&scope=bot%20applications.commands',
             },
             {
               label: 'Donate',

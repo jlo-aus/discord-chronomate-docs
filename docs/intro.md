@@ -19,7 +19,7 @@ export const Highlight = ({children, bgcolor, color}) => (
 
 ## What's a Chronomate?
 
-Chronomate was developed for a small sever I admin. For seasonal events I would switch the icon for a themed one to match the occasion. Chronomate allows you to automate this task by setting up tasks for any calendar date.
+Chronomate was developed for a small guild I admin. For seasonal events I would switch the icon for a themed one to match the occasion. Chronomate allows you to automate this task by setting up tasks for any calendar date.
 
 ## Features
 
@@ -28,13 +28,14 @@ Chronomate is focused on doing this small task well before building an excssive 
 The core set of features right now include:
 
 - 📦 Store icon images in a Discord channel for easy access.
-- 🦾 Change the server icon at any time directly from the Discord server.
-- 📆 Setup automatic recurring icon changes.
-- 🗺️ Set the timezone for your server so icon changes will happen where you are most based.
+- 🦾 Change the guild icon at any time manually using slash commands.
+- 📆 Setup automatic icon changes.
+- 🗺️ Set the timezone for your server so icon changes will happen 2AM local time.
+- 💿 Log icon task events in a channel of your choosing.
 
 ## Development
 
-This bot is is a hobby project, developed in my free time. In the future there are some features which I would like to include:
+This bot is is a hobby project developed in my spare time. In the future there are some features which I would like to include:
 
 - ✨ Banner changing
 - 🌕 Tasks based on events which change date each year
@@ -47,6 +48,8 @@ This bot is is a hobby project, developed in my free time. In the future there a
     - Random icon change
         - Change the icon to a randomly selected one from all available
         - Do this monthly, daily or hourly
-- 💿 Log channel
 
-Chronomate is a hobby project developed in my spare time. If you like using it please consider supporting with a donation.
+
+## Support
+Chronomate is a side project I enjoy working on in my spare time.
+If you find my bot useful and wish to support me to make it even better please [consider buying my a coffee](https://www.buymeacoffee.com/jloaus) ☕.
